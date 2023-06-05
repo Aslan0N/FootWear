@@ -1,17 +1,18 @@
 import React from "react";
-import Desinged from "./HomeComponents/Desinged";
 import BestSellers from "../../Components/BestSellers";
 import Logos from "../../Components/Logos";
+import MenFirst from "../../Components/MenFirst";
+import MenCard from "../../Components/MenCard";
 import Space from "../../Components/Space";
 import Title from "../../Components/Title";
-import Slider from "./HomeComponents/Slider";
 
-const Home = () => {
+const Men = () => {
   return (
     <>
-      <Slider/>
-      <Desinged />
+      {" "}
+      <MenFirst />
       <Space />
+      <MenCard />
       <Title/>
       <BestSellers />
       <Logos />
@@ -19,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Men;
