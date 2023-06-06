@@ -10,13 +10,15 @@ body ul li, * ul li {
 
 header {
   width: 100%;
-  height: 18vh;
+  height: 22vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
   background-color: #f8f9fa;
+  position: relative;
+  z-index: 9;
 }
 header .header-top {
   width: 90%;
@@ -35,7 +37,7 @@ header .header-top form {
   width: 25%;
 }
 header .header-top form input {
-  width: 75%;
+  width: 80%;
   height: 100%;
   border: 0.5px solid rgba(204, 204, 204, 0.568627451);
   outline: none;
@@ -46,16 +48,28 @@ header .header-top form i {
   color: #fff;
   background-color: #88c8bc;
   border-radius: 50%;
-  padding: 17px;
+  padding: 15px;
   margin-left: -15px;
   cursor: pointer;
   font-size: 17px;
+  transition: all 1s;
+}
+header .header-top form i:hover {
+  background-color: #000;
 }
 header .header-bottom {
   width: 90%;
   background-color: #f8f9fa;
-  position: relative;
-  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-bottom .shop-card {
+  color: #616161;
+  cursor: pointer;
+}
+header .header-bottom .shop-card i {
+  margin-right: 10px;
 }
 
 #desinged {
@@ -374,7 +388,7 @@ footer .end i {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 360px;
   position: relative;
   margin-bottom: 100px;
 }
@@ -530,4 +544,48 @@ footer .end i {
   text-align: center;
   font-size: 13px;
   line-height: 20px;
+}
+
+.carousel-item {
+  position: relative !important;
+}
+.carousel-item .owerlay {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  color: #fff;
+}
+.carousel-item .owerlay h1 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+.carousel-item .owerlay span {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+.carousel-item .owerlay p {
+  font-size: 50px;
+  text-align: center;
+}
+.carousel-item .owerlay p span {
+  font-weight: 200;
+  font-size: 60px;
+}
+.carousel-item .owerlay p span b {
+  font-weight: 600;
+}
+
+#sale {
+  width: 100%;
+  height: auto;
+  background-color: #88c8bc;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */

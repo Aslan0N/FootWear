@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
@@ -41,6 +40,10 @@ const Header = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
+          <div className="shop-card">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart (<small>0</small>)
+          </div>
         </div>
       </header>
     </>

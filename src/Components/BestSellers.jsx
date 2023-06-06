@@ -9,7 +9,7 @@ const BestSellers = () => {
       duration:1000
     });
   }, [])
-    const { data, setData } = useContext(GlobalContext);
+    const {data} = useContext(GlobalContext);
   return (
     <>
     <section id="bestsellers">

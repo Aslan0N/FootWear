@@ -1,14 +1,14 @@
-import React from 'react'
-import Player from './AboutComponents/Player'
+import React from "react";
+import Player from "./AboutComponents/Player";
+import Sale from "../../Components/Sale";
 
 const About = () => {
-
-
   return (
     <>
-      <Player/>
+      <Sale />
+      <Player />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

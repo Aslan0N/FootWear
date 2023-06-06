@@ -53,7 +53,7 @@ const ContactMain = () => {
                             </label>
                             <label htmlFor="" className='textarea'>
                                 Message
-                                <textarea name="" id="textarea" cols="55" rows="8" placeholder='Say something about us'></textarea>
+                                <textarea name="" id="textarea" cols="50" rows="8" placeholder='Say something about us'></textarea>
                             </label>
                             <button>Send Message</button>
                         </form>
