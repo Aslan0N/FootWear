@@ -1,9 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../Context/GlobalState";
 import AOS from 'aos';
+import { useCart } from "react-use-cart";
+
 
 
 const BestSellers = () => {
+  const {addItem} = useCart()
   useEffect(()=>{
     AOS.init({
       duration:1000
@@ -26,6 +29,7 @@ const BestSellers = () => {
                                 <p className="card-text">
                                 ${item.price}
                                 </p>
+                                <button className="btn btn-dark" onClick={()=> addItem(item)}>Add To Cart</button>
                             </div>
                         </div>
                     </div>

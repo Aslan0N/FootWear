@@ -3,8 +3,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
+import { useCart } from "react-use-cart";
 
 const Header = () => {
+  const {totalUniqueItems} = useCart()
   return (
     <>
       <header>
@@ -36,14 +38,20 @@ const Header = () => {
                   <LinkContainer to={"/contact"}>
                     <Nav.Link href="#link" className="hv">Contact</Nav.Link>
                   </LinkContainer>
+                  
                 </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          <div className="shop-card">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Cart (<small>0</small>)
-          </div>
+          <LinkContainer to={"/cart"}>
+              <Nav.Link href="#link" className="hv shop-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Basket (<small>{totalUniqueItems}</small>)
+              </Nav.Link>
+          </LinkContainer>
+          {/* <div className="shop-card">
+          
+          </div> */}
         </div>
       </header>
     </>

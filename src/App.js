@@ -1,12 +1,15 @@
-import React from 'react'
-import AppRouter from './Router/AppRouter'
+import React from "react";
+import AppRouter from "./Router/AppRouter";
+import { CartProvider } from "react-use-cart";
 
 const App = () => {
   return (
     <>
-      <AppRouter/>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

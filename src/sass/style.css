@@ -588,4 +588,91 @@ footer .end i {
   text-align: center;
   font-size: 24px;
   font-weight: 200;
+}
+
+.container .cart-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b6b4b3;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.container .cart-item .card-body {
+  margin: 0 20px;
+}
+.container .cart-item .card-body .h4 {
+  line-height: 34px;
+}
+.container .cart-item i {
+  margin: 0 25px;
+  color: grey;
+  cursor: pointer;
+  transition: all 600ms;
+}
+.container .cart-item i:hover {
+  color: red;
+}
+.container .cart-item .counter {
+  border: 1px solid #c4c3c3;
+  width: auto;
+  height: auto;
+}
+.container .cart-item .counter span {
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+}
+.container .cart-item .counter button {
+  outline: none;
+  border: 1px solid rgba(182, 180, 179, 0.5490196078);
+  height: 100%;
+  background-color: transparent;
+  padding: 1px 8px;
+  background-color: rgba(204, 204, 204, 0.2392156863);
+  color: #616161;
+  font-size: 20px;
+}
+.container .cart-item .counter .fa-plus {
+  padding: 8px 6px;
+  height: 100%;
+  font-size: 16px;
+}
+
+.buy {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 30px;
+  background-image: linear-gradient(100deg, #fff, #dbd9d9);
+  border-radius: 35px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+.buy:active {
+  box-shadow: 1px 1px 5px #929190;
+}
+.buy p {
+  padding-top: 14px;
+  color: #000;
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+}
+.buy i {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: #eb232d;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@ import Footer from '../Common/Footer'
 import Men from '../Pages/Men/Men'
 import Women from '../Pages/Women/Women'
 import Contact from '../Pages/Contact/Contact'
+import Cart from '../Pages/Cart'
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
                     <Route path='/women' element={<Women/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='/contact' element={<Contact/>}/>
+                    <Route path='/cart' element={<Cart/>}/>
                 </Routes>
             <Footer/>
             </BrowserRouter>
